@@ -23,7 +23,7 @@ public class Mover {
         // Если клетка свободна
         if (board[x][y] == 0) {
             // ход в зависимости от текущего игрока
-            switch (player){
+            switch (player) {
                 case 1:
                     board[x][y] = 1;
                     break;
@@ -41,7 +41,7 @@ public class Mover {
     }
 
     public void switchPlayer() {
-        switch (player){
+        switch (player) {
             case 1:
                 player = 2;
                 break;

@@ -5,7 +5,7 @@ public class GameBoard {
     private int[][] board;
 
     public GameBoard() {
-        board = new int[15][15];
+        board = new int[14][14];
     }
 
     public void printBoard() {
