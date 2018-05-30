@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class Mover {
 
-    public static int[][] board = new int[14][14];
+    public static int[][] board = new int[16][16];
     public static int player = 1;
     public static int enemy;
 
@@ -34,20 +34,21 @@ public class Mover {
         int count = 1;
         int pointx = x;
         int pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx+1][pointy+1] != 0 && board[pointx+1][pointy+1] != enemy) {
+        while (pointx + 1 >= 0 && pointx + 1 <= 15 && pointy + 1 >= 0 && pointy + 1 <= 15 && board[pointx + 1][pointy + 1] != 0 && board[pointx + 1][pointy + 1] != enemy) {
             pointx++;
             pointy++;
             count++;
         }
         pointx = x;
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx-1][pointy-1] != 0 && board[pointx-1][pointy-1] != enemy) {
+        while (pointx - 1 >= 0 && pointx - 1 <= 15 && pointy - 1 >= 0 && pointy - 1 <= 15 && board[pointx - 1][pointy - 1] != 0 && board[pointx - 1][pointy - 1] != enemy) {
             pointx--;
             pointy--;
             count++;
         }
         System.out.println("D1 " + count);
         if (count >= 5) {
+
             JOptionPane.showMessageDialog(null, "Победа " + player + " игрока");
             System.exit(0);
         }
@@ -55,14 +56,14 @@ public class Mover {
         count = 1;
         pointx = x;
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx-1][pointy+1] != 0 && board[pointx-1][pointy+1] != enemy) {
+        while (pointx - 1 >= 0 && pointx - 1 <= 15 && pointy + 1 >= 0 && pointy + 1 <= 15 && board[pointx - 1][pointy + 1] != 0 && board[pointx - 1][pointy + 1] != enemy) {
             pointx--;
             pointy++;
             count++;
         }
         pointx = x;
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx+1][pointy-1] != 0 && board[pointx+1][pointy-1] != enemy) {
+        while (pointx + 1 >= 0 && pointx + 1 <= 15 && pointy - 1 >= 0 && pointy - 1 <= 15 && board[pointx + 1][pointy - 1] != 0 && board[pointx + 1][pointy - 1] != enemy) {
             pointx++;
             pointy--;
             count++;
@@ -76,12 +77,12 @@ public class Mover {
         count = 1;
         pointx = x;
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx][pointy+1] != 0 && board[pointx][pointy+1] != enemy) {
+        while (pointx >= 0 && pointx <= 15 && pointy + 1 >= 0 && pointy + 1 <= 15 && board[pointx][pointy + 1] != 0 && board[pointx][pointy + 1] != enemy) {
             pointy++;
             count++;
         }
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx][pointy-1] != 0 && board[pointx][pointy-1] != enemy) {
+        while (pointx >= 0 && pointx <= 15 && pointy - 1 >= 0 && pointy - 1 <= 15 && board[pointx][pointy - 1] != 0 && board[pointx][pointy - 1] != enemy) {
             pointy--;
             count++;
         }
@@ -94,12 +95,12 @@ public class Mover {
         count = 1;
         pointx = x;
         pointy = y;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx+1][pointy] != 0 && board[pointx+1][pointy] != enemy) {
+        while (pointx + 1 >= 0 && pointx + 1 <= 15 && pointy >= 0 && pointy <= 15 && board[pointx + 1][pointy] != 0 && board[pointx + 1][pointy] != enemy) {
             pointx++;
             count++;
         }
         pointx = x;
-        while (pointx >= 0 && pointx <= 14 && pointy >= 0 && pointy <= 14 && board[pointx-1][pointy] != 0 && board[pointx-1][pointy] != enemy) {
+        while (pointx - 1 >= 0 && pointx - 1 <= 15 && pointy >= 0 && pointy <= 15 && board[pointx - 1][pointy] != 0 && board[pointx - 1][pointy] != enemy) {
             pointx--;
             count++;
         }

@@ -8,6 +8,8 @@ import java.util.ResourceBundle;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 import javafx.fxml.FXML;
+import javafx.geometry.HPos;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -43,6 +45,7 @@ public class Controller {
             anchorpane.getChildren().add(new Line(i, 0, i, 750));
         }*/
         mover = new Mover();
+
         gridpane.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
             int y = (int) (event.getX() / 50);
             int x = (int) (event.getY() / 50);
@@ -50,25 +53,30 @@ public class Controller {
                 mover.point(x, y);
                 if (Mover.player == 1) {
                     try {
-                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\Black.png");
+                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\30ch.png");
                         ImageView imageView = new ImageView();
                         imageView.setImage(new Image(f));
                         gridpane.add(imageView, y, x);
+                        GridPane.setHalignment(imageView, HPos.CENTER);
+
 
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
                 } else {
                     try {
-                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\Pink.png");
+                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\30b.png");
                         ImageView imageView = new ImageView();
                         imageView.setImage(new Image(f));
                         gridpane.add(imageView, y, x);
+                        GridPane.setHalignment(imageView, HPos.CENTER);
                     } catch (FileNotFoundException e) {
                         e.printStackTrace();
                     }
                 }
+
                 mover.winGame(x, y);
+
                 mover.changePlayer();
             } else JOptionPane.showMessageDialog(null, "Ход невозможен");
 
