@@ -1,26 +1,18 @@
 package sample;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.net.URL;
-import java.util.ResourceBundle;
-
-import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.fxml.FXML;
 import javafx.geometry.HPos;
-import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.shape.Line;
-import org.w3c.dom.events.Event;
 
 import javax.swing.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class Controller {
 
@@ -83,5 +75,9 @@ public class Controller {
 
         });
 
+    }
+
+    public GridPane getGridpane() {
+        return gridpane;
     }
 }
