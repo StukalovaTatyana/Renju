@@ -9,6 +9,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 
 import javax.swing.*;
+import java.awt.*;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.net.URL;
@@ -26,16 +27,15 @@ public class Controller {
     private AnchorPane anchorpane;
 
     @FXML
-    private GridPane gridpane;
+    public GridPane gridpane;
 
     public Mover mover;
 
+    public AI ai = new AI(2, 1);
+
     @FXML
     void initialize() {
-        /*for (int i = 0; i < 750; i+=50){
-            anchorpane.getChildren().add(new Line(0, i, 750, i));
-            anchorpane.getChildren().add(new Line(i, 0, i, 750));
-        }*/
+
         mover = new Mover();
 
         gridpane.addEventHandler(MouseEvent.MOUSE_PRESSED, event -> {
@@ -43,41 +43,43 @@ public class Controller {
             int x = (int) (event.getY() / 50);
             if (mover.canPoint(x, y) == true) {
                 mover.point(x, y);
-                if (Mover.player == 1) {
-                    try {
-                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\30ch.png");
-                        ImageView imageView = new ImageView();
-                        imageView.setImage(new Image(f));
-                        gridpane.add(imageView, y, x);
-                        GridPane.setHalignment(imageView, HPos.CENTER);
-
-
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                } else {
-                    try {
-                        FileInputStream f = new FileInputStream("C:\\Users\\tatya\\Documents\\GitHub\\Renju\\Image\\30b.png");
-                        ImageView imageView = new ImageView();
-                        imageView.setImage(new Image(f));
-                        gridpane.add(imageView, y, x);
-                        GridPane.setHalignment(imageView, HPos.CENTER);
-                    } catch (FileNotFoundException e) {
-                        e.printStackTrace();
-                    }
-                }
-
+                addImage(Mover.player, x, y);
                 mover.winGame(x, y);
 
                 mover.changePlayer();
+                Point p = ai.moveAI();
+                addImage(ai.my, p.x, p.y);
+                for (int i = 0; i < Mover.board.length; i++) {
+                    for (int j = 0; j < Mover.board[i].length; j++) {
+                        System.out.print(Mover.board[i][j] +" ");
+                    }
+                    System.out.println();
+                }
             } else JOptionPane.showMessageDialog(null, "Ход невозможен");
-
-
         });
-
     }
 
-    public GridPane getGridpane() {
-        return gridpane;
+    public void addImage(int player, int x, int y) {
+        if (player == 1) {
+            try {
+                FileInputStream f = new FileInputStream("C:\\Users\\alexey\\Desktop\\АГУ\\GitHub\\Renju\\Image\\30ch.png");
+                ImageView imageView = new ImageView();
+                imageView.setImage(new Image(f));
+                gridpane.add(imageView, y, x);
+                GridPane.setHalignment(imageView, HPos.CENTER);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                FileInputStream f = new FileInputStream("C:\\Users\\alexey\\Desktop\\АГУ\\GitHub\\Renju\\Image\\30b.png");
+                ImageView imageView = new ImageView();
+                imageView.setImage(new Image(f));
+                gridpane.add(imageView, y, x);
+                GridPane.setHalignment(imageView, HPos.CENTER);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
