@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e80556c1-15f4-43fb-b1b8-9b1e16ab97ed" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GameBoard.java" afterPath="$PROJECT_DIR$/src/com/company/GameBoard.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/GameGraphics.java" afterPath="$PROJECT_DIR$/src/com/company/GameGraphics.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Mover.java" afterPath="$PROJECT_DIR$/src/com/company/Mover.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +27,8 @@
       <file leaf-file-name="GameBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#99#100#0" expanded="true" />
                 <element signature="e#138#139#0" expanded="true" />
@@ -47,7 +42,7 @@
       <file leaf-file-name="Mover.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Mover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
+            <state relative-caret-position="1050">
               <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding>
                 <element signature="e#999#1000#0" expanded="true" />
@@ -65,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/GameGraphics.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,10 +88,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/Board.java" />
         <option value="$PROJECT_DIR$/src/com/company/Moover.java" />
-        <option value="$PROJECT_DIR$/src/com/company/GameBoard.java" />
         <option value="$PROJECT_DIR$/src/com/company/GameGraphics.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Mover.java" />
+        <option value="$PROJECT_DIR$/src/com/company/GameBoard.java" />
       </list>
     </option>
   </component>
@@ -121,8 +116,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,8 +142,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,11 +211,18 @@
       <option name="presentableId" value="Default" />
       <updated>1520691110574</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update board">
+      <created>1521701596621</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1521701596621</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -253,11 +255,63 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Update board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update board" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Mover.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GameGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -302,30 +356,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#99#100#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Mover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
+        <state relative-caret-position="1050">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#999#1000#0" expanded="true" />
@@ -338,10 +371,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/GameBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#99#100#0" expanded="true" />
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/GameGraphics.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
